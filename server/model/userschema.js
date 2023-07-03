@@ -5,22 +5,22 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    email: {
-        type: String,
-        required: true
-    },
-    phone: {
+    rate: {
         type: Number,
         required: true
     },
-    password: {
+    companyName: {
         type: String,
         required: true
     },
-    cpassword: {
-        type: String,
+    expiryDate: {
+        type: Date,
         required: true
     },
+    amount: {
+        type: Number,
+        required: true
+    }
 });
 
 const User = mongoose.model('USER' , userSchema) ;
